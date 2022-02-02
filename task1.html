@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        h1{
+    text-align: center;
+    color: green;
+}
+.signin{
+    width: 25%;
+    border:lightgray solid;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    position:relative ;
+    left: 35%;
+    padding: 25px;
+    margin: 10px;
+    font-size: large;
+}
+input[type="email"],input[type="password"]{
+    width:100%;
+    padding: 5px;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 15px;
+    font-size:large ;
+    border:none;
+    background-color:rgb(4, 131, 68);
+    color: white;
+}
+input[type="submit"]:hover{
+    background-color: rgb(21, 151, 4);
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: medium;
+    color: rgb(88, 117, 248);
+}
+a:hover{
+    color:green;
+    text-decoration: underline;
+}
+button{
+    border:none;
+}
+    </style>
+</head>
+<body>
+    
+    <form>
+         <div class="signin">
+            <h1>Login</h1>
+              <p> User ID :<input type="email" name="email" required placeholder="email ID"></p> 
+             <p>Password:<input type="password" name="password" required></p> 
+            <button> <input type="submit" name="signin" value="Login"></button>
+                
+            <a href="https://www.kjscecodecell.com/" target="_blank">Go to code cell</a>
+         </div>
+    </form>
+    <script>
+        let login=document.querySelector('button')
+        login.addEventListener('click', showmsg)
+        function showmsg(){
+            alert("You logged in Succesfully.")
+        }
+    </script>
+    
+</body>
+</html>
